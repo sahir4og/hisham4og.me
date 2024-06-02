@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 50px; /* Adjusted bottom to make the sidebar a bit shorter */
+    width: 165px;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #800080;
+    text-align: center;
+}
+
+.sidebar .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #800080;
+}
+
+.sidebar .profile h2 {
+    margin-top: 10px;
+}
+
+.sidebar .profile p {
+    margin: 5px 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background: #800080;
+}
+
+.footer-bar {
+    width: 200px;
+    height: 5px;
+    background: #800080;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #800080;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.content {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 250px; /* Ensure it doesn't touch the sidebar */
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #800080;
+    overflow-y: auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+    background: linear-gradient(90deg, #fff, #800080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #800080;
+}
+
+section p {
+    padding: 10px;
+    border-radius: 5px;
+    background: #2c2c2c;
+    box-shadow: 0 0 10px #800080;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+    background: #2c2c2c;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #800080;
+}
+
+section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .footer-bar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        box-shadow: none;
+        position: static;
+    }
+}
